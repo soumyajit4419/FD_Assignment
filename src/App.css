@@ -9,7 +9,7 @@
 }
 
 .__navbar {
-  background-color: transparent !important;
+  background-color: #4066c0 !important;
 }
 
 .__navbar-brand {
@@ -67,4 +67,25 @@
 .__card-inner-value {
   font-size: 1.4em;
   font-weight: 600;
+}
+
+.__table {
+  padding-top: 50px;
+}
+
+.__table p {
+  padding-bottom: 50px;
+}
+
+.__btn {
+  background-color: transparent !important;
+  border: 0;
+}
+
+.__btn svg {
+  font-size: 1.5em;
+}
+
+.card{
+  box-shadow: 3px 3px 5px 3px #f0f0f0 !important;
 }

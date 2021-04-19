@@ -1,9 +1,12 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useHistory } from "react-router-dom";
+import { GrFormNextLink } from "react-icons/gr";
 import { AppContext } from "../App";
 
 function Details({ appName, companyName, id }) {
+  const history = useHistory();
   const [appSummation, setSummationValues] = useState({});
   const appStats = useContext(AppContext);
 
@@ -30,6 +33,10 @@ function Details({ appName, companyName, id }) {
     }
   }, [appStats, id]);
 
+  const handelClick = () => {
+    history.push(`/app/${id}`);
+  };
+
   return (
     <Row className="__apps-desc">
       <Col md={10}>
@@ -41,7 +48,9 @@ function Details({ appName, companyName, id }) {
                 <p>{companyName}</p>
               </Col>
               <Col xs={4} style={{ textAlign: "right" }}>
-                <Button>Next</Button>
+                <Button onClick={handelClick} className="__btn">
+                  <GrFormNextLink />
+                </Button>
               </Col>
             </Row>
             <Row>
