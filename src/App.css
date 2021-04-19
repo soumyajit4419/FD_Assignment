@@ -1,33 +1,70 @@
-.App {
+.__home {
+  background-color: #4066c0 !important;
+  min-height: 100vh;
+}
+
+.__home-inner {
+  justify-content: center;
   padding-top: 50px;
 }
 
-.register {
+.__navbar {
+  background-color: transparent !important;
+}
+
+.__navbar-brand {
+  color: white !important;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+}
+
+.__revenue {
+  background-color: #3b5ba8 !important;
+  padding: 50px;
+}
+
+.__revenue-inner {
   justify-content: center;
+  padding: 50px;
 }
 
-.form {
-  padding-top: 25px;
-}
-
-.btn-center {
+.__revenue-icon {
   text-align: center;
+  padding: 20px;
 }
 
-.nav-tabs .nav-link {
-  width: 50% !important;
-  text-align: center;
-  border-radius: 0 !important;
+.__revenue-icon img {
+  height: 100px;
+  width: 100px;
 }
 
-.nav-tabs .nav-link.active {
-  border-color: #dee2e6 #dee2e6 #dee2e6 !important;
-  background-color: #ecf0f3 !important;
+.__revenue-icon h4 {
+  color: white;
+  padding-top: 5px;
 }
 
-.google-btn {
-  background-color: white;
-  color: black;
-  border: none;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 1px 4px rgb(0 0 0 / 12%);
+.__apps {
+  padding: 50px;
+}
+
+.__apps-desc {
+  justify-content: center;
+  padding: 20px;
+}
+
+.__card-title {
+  margin-block-end: 0 !important;
+  font-weight: 600;
+}
+
+.__card_inner {
+  text-align: center !important;
+}
+
+.__card-inner-title {
+  margin-block-end: 0 !important;
+}
+.__card-inner-value {
+  font-size: 1.4em;
+  font-weight: 600;
 }
