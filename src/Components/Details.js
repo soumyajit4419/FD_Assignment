@@ -39,7 +39,7 @@ function Details({ appName, companyName, id }) {
 
   return (
     <Row className="__apps-desc">
-      <Col md={10}>
+      <Col md={12}>
         <Card>
           <Card.Body>
             <Row>
@@ -54,19 +54,19 @@ function Details({ appName, companyName, id }) {
               </Col>
             </Row>
             <Row>
-              <Col md={3} className="__card_inner">
+              <Col xs={3} className="__card_inner">
                 <p className="__card-inner-title">Revenue</p>
                 <p className="__card-inner-value">{appSummation.revenue}</p>
               </Col>
-              <Col md={3} className="__card_inner">
+              <Col xs={3} className="__card_inner">
                 <p className="__card-inner-title">Ad Request</p>
                 <p className="__card-inner-value"> {appSummation.addRequest}</p>
               </Col>
-              <Col md={3} className="__card_inner">
+              <Col xs={3} className="__card_inner">
                 <p className="__card-inner-title">Ad Response</p>
                 <p className="__card-inner-value">{appSummation.addResponse}</p>
               </Col>
-              <Col md={3} className="__card_inner">
+              <Col xs={3} className="__card_inner">
                 <p className="__card-inner-title">Impression</p>
                 <p className="__card-inner-value"> {appSummation.impression}</p>
               </Col>

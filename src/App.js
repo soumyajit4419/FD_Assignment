@@ -2,8 +2,6 @@ import { useState, useEffect, createContext } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Axios from "axios";
 import Home from "./Components/Home";
-import Revenue from "./Components/Revenue";
-import Applications from "./Components/Applications";
 import TableDisplay from "./Components/Table";
 import "./App.css";
 
@@ -40,8 +38,6 @@ function App() {
           <Switch>
             <Route path="/" exact>
               <Home />
-              <Revenue />
-              <Applications />
             </Route>
             <Route path="/app/:id">
               <TableDisplay />
