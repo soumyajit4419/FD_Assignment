@@ -5,7 +5,7 @@ body {
 
 .__home-img {
   background-color: #4066c0 !important;
-  padding: 50px;
+  padding-bottom: 50px;
 }
 
 .__home-inner {
@@ -30,7 +30,7 @@ body {
 
 .__revenue {
   background-color: #3b5ba8 !important;
-  padding: 50px;
+  padding: 20px;
 }
 
 .__revenue-inner {
@@ -42,15 +42,10 @@ body {
   text-align: center;
   padding: 20px;
 }
-
-.__revenue-icon img {
-  height: 50px;
-  width: 50px;
-}
-
 .__revenue-icon h4 {
   color: white;
   padding-top: 5px;
+  font-size: 1.1em;
 }
 
 .__apps-desc {
@@ -67,7 +62,12 @@ body {
 
 .__card-title {
   margin-block-end: 0 !important;
+  font-size: 1em;
   font-weight: 600;
+}
+
+.__card-sub-title {
+  font-size: 0.7em;
 }
 
 .__card_inner {
@@ -76,9 +76,10 @@ body {
 
 .__card-inner-title {
   margin-block-end: 0 !important;
+  font-size: 0.7em;
 }
 .__card-inner-value {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
 }
 

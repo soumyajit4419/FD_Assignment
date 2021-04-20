@@ -24,8 +24,8 @@ function Details({ appName, companyName, id }) {
         impression += values[j].impressions;
       }
       let iStats = {
-        addRequest: addRequest,
-        addResponse: addResponse,
+        addRequest: String(addRequest).substr(0, 2),
+        addResponse: String(addResponse).substr(0, 2),
         revenue: revenue,
         impression: impression,
       };
@@ -45,7 +45,7 @@ function Details({ appName, companyName, id }) {
             <Row>
               <Col xs={8}>
                 <h5 className="__card-title">{appName}</h5>
-                <p>{companyName}</p>
+                <p className="__card-sub-title"> {companyName}</p>
               </Col>
               <Col xs={4} style={{ textAlign: "right" }}>
                 <Button onClick={handelClick} className="__btn">
@@ -60,11 +60,11 @@ function Details({ appName, companyName, id }) {
               </Col>
               <Col xs={3} className="__card_inner">
                 <p className="__card-inner-title">Ad Request</p>
-                <p className="__card-inner-value"> {appSummation.addRequest}</p>
+                <p className="__card-inner-value"> {appSummation.addRequest}M</p>
               </Col>
               <Col xs={3} className="__card_inner">
                 <p className="__card-inner-title">Ad Response</p>
-                <p className="__card-inner-value">{appSummation.addResponse}</p>
+                <p className="__card-inner-value">{appSummation.addResponse}M</p>
               </Col>
               <Col xs={3} className="__card_inner">
                 <p className="__card-inner-title">Impression</p>
